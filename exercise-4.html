@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://fav.farm/🔥" />
+	<title>Fire</title>
+
+	<!-- Reset -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+
+	<!-- Google Fonts -->
+	<title>Fire</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--def-transition-duration: .2s;
+		}
+
+		
+
+		
+
+		#hero {
+			background-color: #151618;
+			height: 50vh;
+			padding-top: 3rem;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			
+			padding: 10px; /* optional */
+			text-align: center; /* optional */
+		}
+
+		#main-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 90%;
+			margin: 0 auto;
+			position: sticky;
+			top: 0;
+		}
+
+		nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			gap: 3rem;
+		}
+
+		nav ul a {
+			text-decoration: none;
+			color: #A1A2A3;
+			display: inline-block;
+			padding: 1.5rem 0;
+			position: sticky;
+			top: 0;
+		}
+
+		nav ul a:hover {
+			color: #E8E8E8;
+		}
+
+		.has-submenu {
+			position: relative;
+			display: flex;
+			gap: .5rem;
+			align-items: center;
+			justify-content: flex-start;
+		}
+
+		.has-submenu::after {
+			content: url('icons/icon-arrow-down.svg');
+			opacity: .6;
+			height: 25px;
+		}
+
+		.has-submenu:hover ul {
+			display: block;
+		}
+
+		.has-submenu ul {
+			position: absolute;
+			top: 100%;
+			left: -2rem;
+			background-color: #212224;
+			border-radius: .5rem;
+			padding: .5rem;
+			display: none;
+		}
+
+		.has-submenu ul a {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1rem;
+			min-width: 15rem;
+			border-radius: .5rem;
+		}
+
+		.has-submenu ul a::after {
+			content: url(icons/icon-arrow-right.svg);
+			height: 17px;
+			opacity: 0;
+		}
+
+		.has-submenu ul a:hover {
+			background-color: #2C2D2F;
+			padding: 1rem 1.5rem;
+		}
+
+		.has-submenu ul a:hover::after {
+			opacity: 1;
+		}
+
+		.has-submenu:hover::after {
+			opacity: 1;
+		}
+
+		.has-submenu:hover > a {
+			color: #E8E8E8;
+		}
+
+		button {
+			appearance: none;
+			border: 1px solid orange;
+			color: orange;
+			background-color: transparent;
+			border-radius: 10rem;
+			padding: .75rem 1.5rem;
+			cursor: pointer;
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 10px;
+		}
+		body {
+			margin: 0;
+			color: orangered;
+			background-color: black;
+			text-align: center;
+		  }
+		  .offside-regular {
+			font-family: "Offside", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+		  }
+		  .sticky-wrapper {
+			position: relative;
+			margin: 10px;
+		  }
+		  
+		  .sticky-header {
+			position: absolute;
+			top: 0;
+			left: 1;
+			width: 100%;
+			margin: 10px;
+			padding: 10px; /* optional */
+			text-align: center; /* optional */
+		  }
+		  a {
+			text-decoration: none;
+		  }
+		/* Air */
+	</style>
+</head>
+<body>
+	<div id="sticky-wrapper">
+		<header id="sticky-header">
+			<a href="https://akdavis83.github.io/Bible-Twos2/"><img src="1.png" alt="Logo" style="width: 10vw;"></a>
+
+			<nav>
+				<ul>
+					<li class="has-submenu">
+						<a href="#"></a>
+
+						<ul>
+							<li><a href="#touch">Touch</a></li>
+							<li><a href="#exp">Experience</a></li>
+							<li><a href="#fire">Fire</a></li>
+							<li><a href="#pure">Pure</a></li>
+							<li><a href="#press">Press</a></li>
+						</ul>
+					</li>
+					<li><a href="#touch">Touch</a></li>
+					<li><a href="#exp">Exp</a></li>
+					<li><a href="#fire">Fire</a></li>
+					<li><a href="#pure">Pure</a></li>
+					<li><a href="#press">Press</a></li>
+				</ul>
+				<a href="https://akdavis83.github.io/Lost/"><button>Pentecost</button></a>
+			</nav>
+			<div class="offside-regular" id="touch">
+				<h1>Receive a touch from heaven</h1>
+				<img src="./img/1.png" alt="Fire" style="width: 50%; height:50%;" id="exp">
+				<h1>Experience the Fire of God</h1>
+				<img src="./img/Fire Of God (1).gif" alt="Fire"
+				id="fire">
+				
+				<h1>A pure flow, a river that flows from the throne of God</h1>
+				<img src="./img/Exp Fire.png" alt="Fire" style="width: 50%; height:50%; border:none" id="pure">
+				<h1 id="press">Get ready to press in and press the ignition button</h1>
+					</div>
+			
+		</header>
+	</div>
+	<script type="importmap">
+		{
+				  "imports": {
+					  "three": "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js",
+			"jsm/": "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/"
+		  }
+			  }
+	  </script>
+	<script type="module" src="./index.js"></script>
+</body>
+</html>
